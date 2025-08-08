@@ -1,0 +1,15 @@
+{
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "groupName": "Docker Updates",
+      "automerge": true
+    },
+    {
+      "matchManagers": ["npm"],
+      "groupName": "NPM Package Updates",
+      "automerge": false
+    }
+  ]
+}
